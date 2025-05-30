@@ -7,6 +7,7 @@ gpSprite = noone;
 vkEnabled = false;
 vkHolder = 0;
 
+/*
 function monkeyUpdateSprites(){
 	switch(inputType)
 	{
@@ -240,3 +241,4 @@ function monkeyUpdateSprites(){
 			}break;	
 	}
 }
+ */

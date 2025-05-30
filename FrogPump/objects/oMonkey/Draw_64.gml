@@ -1,4 +1,4 @@
-if vkEnabled
+/*if vkEnabled
 {
 	if status = MONKEY.OFF
 	{
@@ -10,3 +10,4 @@ if vkEnabled
 	}
 }
 
+*/

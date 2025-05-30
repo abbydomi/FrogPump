@@ -14,7 +14,7 @@ function monkeyCreateListener(ID, vkInput, gpInput, gpSlot, heldframes){
 	});
 	//if instance_exists(monkeyList[ID]) instance_destroy(monkeyList[ID]);
 	monkeyList[ID] = newMonkey;
-	monkeyList[ID].monkeyUpdateSprites();
+	// monkeyList[ID].monkeyUpdateSprites();
 }
 
 function monkeyDeleteListener(ID){
@@ -68,7 +68,7 @@ function monkeyRemapKey(ID, newKeyboardKey, newGamepadKey){
 	monkeyList[ID].vkHolder = virtual_key_add(monkeyList[ID].xPos, monkeyList[ID].yPos, monkeyList[ID].vkWidth, monkeyList[ID].vkHeight, newKeyboardKey);
 	monkeyList[ID].inputType = newKeyboardKey;
 	monkeyList[ID].gamepadInput = newGamepadKey;
-	monkeyList[ID].monkeyUpdateSprites();
+	// monkeyList[ID].monkeyUpdateSprites();
 }
 
 function monkeyGetKeyboardBinding(ID){

@@ -22,7 +22,8 @@ if monkeyGetInputStatus(Input.Left) == MONKEY.RELEASED {
     sprite_index = sPlayerHorizontal 
     finalXscale = -1
 }
-if monkeyGetInputStatus(Input.Primary) {
+if monkeyGetInputStatus(Input.Primary) == MONKEY.RELEASED {
+    // Animation
     switch (dir) {
         case Direction.Up:
     		sprite_index = sPlayerUpAttack
@@ -37,6 +38,18 @@ if monkeyGetInputStatus(Input.Primary) {
     case Direction.Left:
 		sprite_index = sPlayerHorizontalAttack
 		break
+    }
+    
+    var trigger = attackTriggers[dir] 
+    show_debug_message(string(trigger))
+    with (trigger) {
+        var shuriken = instance_place(x, y, Shuriken)
+        if shuriken != noone {
+            repeat(irandom_range(6, 12)) {
+                instance_create_depth(shuriken.x, shuriken.y, shuriken.depth-1, ShurikenParticle)
+            }
+            instance_destroy(shuriken)
+        }
     }
 }
 
