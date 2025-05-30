@@ -53,5 +53,9 @@ if monkeyGetInputStatus(Input.Primary) == MONKEY.RELEASED {
     }
 }
 
+if sprite_index == sPlayerDown || sprite_index == sPlayerUp || sprite_index == sPlayerHorizontal {
+    image_yscale = wave(1, 0.8, 0.3, 0)
+}
+
 image_xscale = lerp(image_xscale, finalXscale, 0.1)
 image_yscale = lerp(image_yscale, 1, 0.1)
