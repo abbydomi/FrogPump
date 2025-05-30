@@ -38,6 +38,7 @@
   "resources":[
     {"id":{"name":"AttackTrigger","path":"objects/AttackTrigger/AttackTrigger.yy",},},
     {"id":{"name":"Blood","path":"objects/Blood/Blood.yy",},},
+    {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
     {"id":{"name":"oMonkey","path":"objects/oMonkey/oMonkey.yy",},},
     {"id":{"name":"oMonkeyGamepadBrain","path":"objects/oMonkeyGamepadBrain/oMonkeyGamepadBrain.yy",},},
     {"id":{"name":"oMonkeyMouse","path":"objects/oMonkeyMouse/oMonkeyMouse.yy",},},
@@ -50,6 +51,7 @@
     {"id":{"name":"MonkeyDependencies","path":"scripts/MonkeyDependencies/MonkeyDependencies.yy",},},
     {"id":{"name":"MonkeyFunctions","path":"scripts/MonkeyFunctions/MonkeyFunctions.yy",},},
     {"id":{"name":"monkeyInit","path":"scripts/monkeyInit/monkeyInit.yy",},},
+    {"id":{"name":"screenshake","path":"scripts/screenshake/screenshake.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sBlood","path":"sprites/sBlood/sBlood.yy",},},
     {"id":{"name":"sPlayerDown","path":"sprites/sPlayerDown/sPlayerDown.yy",},},

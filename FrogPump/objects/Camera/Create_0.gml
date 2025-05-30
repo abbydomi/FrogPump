@@ -1,0 +1,9 @@
+shake = false
+shakeDir = Direction.Up
+magnetx = 0
+magnety = 0
+cam = view_camera[0]
+finalx = 0
+finaly = 0
+startx = camera_get_view_x(cam)
+starty = camera_get_view_y(cam)
