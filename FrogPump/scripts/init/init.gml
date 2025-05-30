@@ -10,6 +10,13 @@ function init(){
 		Pause,
 	}
 	
+	enum Direction {
+		Up,
+		Down,
+		Left,
+		Right
+	}
+	
 	monkeyCreateListener(Input.Up, vk_up, gp_padu, 0, 1)
 	monkeyCreateListener(Input.Down, vk_down, gp_padd, 0, 1)
 	monkeyCreateListener(Input.Left, vk_left, gp_padl, 0, 1)
