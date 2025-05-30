@@ -1,1 +1,3 @@
-alarm[0] = irandom_range(60, 320)
+alarm[0] = freq
+
+spawnSpeed = 1

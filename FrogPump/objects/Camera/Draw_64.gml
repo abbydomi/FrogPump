@@ -43,4 +43,6 @@ with AttackTrigger {
     draw_circle(position[0], position[1], 26, !active)
 }
 
+draw_text(middleW, 16, score)
+
 draw_set_color(c_white)

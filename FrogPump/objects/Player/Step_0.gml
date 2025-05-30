@@ -49,6 +49,7 @@ if monkeyGetInputStatus(Input.Primary) == MONKEY.RELEASED {
             repeat(irandom_range(6, 12)) {
                 instance_create_depth(shuriken.x, shuriken.y, shuriken.depth-1, ShurikenParticle)
             }
+            score++
             instance_destroy(shuriken)
         }
     }
