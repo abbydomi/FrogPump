@@ -41,7 +41,8 @@ if monkeyGetInputStatus(Input.Primary) == MONKEY.RELEASED {
     }
     
     var trigger = attackTriggers[dir] 
-    show_debug_message(string(trigger))
+    trigger.active = true
+    trigger.alarm[0] = 8
     with (trigger) {
         var shuriken = instance_place(x, y, Shuriken)
         if shuriken != noone {

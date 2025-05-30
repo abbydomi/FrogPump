@@ -53,6 +53,7 @@
     {"id":{"name":"monkeyInit","path":"scripts/monkeyInit/monkeyInit.yy",},},
     {"id":{"name":"screenshake","path":"scripts/screenshake/screenshake.yy",},},
     {"id":{"name":"wave","path":"scripts/wave/wave.yy",},},
+    {"id":{"name":"worldToGui","path":"scripts/worldToGui/worldToGui.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sBlood","path":"sprites/sBlood/sBlood.yy",},},
     {"id":{"name":"sPlayerDown","path":"sprites/sPlayerDown/sPlayerDown.yy",},},

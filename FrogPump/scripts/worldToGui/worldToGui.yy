@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"worldToGui",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"worldToGui",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

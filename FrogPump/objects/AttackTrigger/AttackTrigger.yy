@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"AttackTrigger",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"AttackTrigger",
   "overriddenProperties":[],
@@ -24,7 +26,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"dir","filters":[],"listItems":[],"multiselect":false,"name":"dir","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Direction.Up","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"active","filters":[],"listItems":[],"multiselect":false,"name":"active","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
@@ -34,5 +36,5 @@
     "path":"sprites/sTrigger/sTrigger.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

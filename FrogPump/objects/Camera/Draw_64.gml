@@ -5,7 +5,7 @@ var height = display_get_gui_height()
 var middleW = width / 2
 var middleH = height / 2
 
-var circlePadding = 32
+var circlePadding = 48
 var circleRadius = 6
 
 with Player {
@@ -35,5 +35,12 @@ with Player {
     // leading
     draw_circle(middleW + circlePadding, middleH, circleRadius, true)
     
-    draw_set_color(c_white)
+    
 }
+
+with AttackTrigger {
+    var position = worldxy_to_guixy(x, y)
+    draw_circle(position[0], position[1], 26, !active)
+}
+
+draw_set_color(c_white)
