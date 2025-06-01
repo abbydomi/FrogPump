@@ -7,7 +7,7 @@ function init(){
 		Left,
 		Right,
 		Primary,
-		Pause,
+		Pause
 	}
 	
 	enum Direction {
@@ -16,6 +16,12 @@ function init(){
 		Left,
 		Right
 	}
+    
+    enum Result {
+        Perfect,
+        Good,
+        Bad
+    }
 	
 	monkeyCreateListener(Input.Up, vk_up, gp_padu, 0, 1)
 	monkeyCreateListener(Input.Down, vk_down, gp_padd, 0, 1)

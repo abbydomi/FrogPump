@@ -49,7 +49,22 @@ if monkeyGetInputStatus(Input.Primary) == MONKEY.RELEASED {
             repeat(irandom_range(6, 12)) {
                 instance_create_depth(shuriken.x, shuriken.y, shuriken.depth-1, ShurikenParticle)
             }
-            score++
+            switch(accuracyTrigger1.result) {
+                case Result.Bad:
+                    var tag = instance_create_depth(x,y,depth, FeedbackTag)
+                    tag.sprite_index = sTagMiss
+                    break
+                case Result.Good:
+                    var tag = instance_create_depth(x,y,depth, FeedbackTag)
+                    tag.sprite_index = sTagGood
+                    score++
+                    break
+                case Result.Perfect:
+                    var tag = instance_create_depth(x,y,depth, FeedbackTag)
+                    tag.sprite_index = sTagPerfect
+                    score += 2
+                    break
+            }
             instance_destroy(shuriken)
         }
     }
@@ -61,3 +76,19 @@ if sprite_index == sPlayerDown || sprite_index == sPlayerUp || sprite_index == s
 
 image_xscale = lerp(image_xscale, finalXscale, 0.1)
 image_yscale = lerp(image_yscale, 1, 0.1)
+
+// 
+
+/*
+var nearestShuriken = instance_nearest(x, y, Shuriken)
+if instance_exists(nearestShuriken) {
+    var distance = point_distance(x, y, nearestShuriken.x, nearestShuriken.y)
+    if distance <= 100 {
+        Camera.zoom = 1 + (distance / 1000)
+    } else {
+        Camera.zoom = 1
+    }
+} else {
+    Camera.zoom = 1
+}
+*/

@@ -27,6 +27,8 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"active","filters":[],"listItems":[],"multiselect":false,"name":"active","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"accuracyTrigger1","filters":[],"listItems":[],"multiselect":false,"name":"accuracyTrigger1","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"accuracyTrigger2","filters":[],"listItems":[],"multiselect":false,"name":"accuracyTrigger2","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

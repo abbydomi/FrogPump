@@ -10,3 +10,5 @@ if shake {
 }
 
 camera_set_view_pos(cam, finalx, finaly)
+
+camera_set_view_size(cam, camWidth, camHeight)
