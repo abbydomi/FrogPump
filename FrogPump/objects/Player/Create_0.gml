@@ -1,8 +1,6 @@
 dir = Direction.Right
 finalXscale = 1
 dirChange = false
+hitpoints = 3
 image_speed = 0.5
-
-instance_create_depth(0, 0, depth, Camera)
-
 mask_index = sPlayerHorizontal

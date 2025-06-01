@@ -65,6 +65,20 @@ if monkeyGetInputStatus(Input.Primary) == MONKEY.RELEASED {
                     score += 2
                     break
             }
+            switch (shuriken.dir) {
+                case Direction.Right:
+                    audio_play_sound(drum1, 1, false, 1, 0, random_range(0.8,1.2))
+                    break
+                case Direction.Left:
+                     audio_play_sound(drum2, 1, false, 1, 0, random_range(0.8,1.2))
+                    break
+                case Direction.Up:
+                     audio_play_sound(drum3, 1, false, 1, 0, random_range(0.8,1.2))
+                    break
+                case Direction.Down:
+                     audio_play_sound(drum4, 1, false, 1, 0, random_range(0.8,1.2))
+                    break
+            }
             instance_destroy(shuriken)
         }
     }

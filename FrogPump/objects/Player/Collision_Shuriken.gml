@@ -20,4 +20,10 @@ switch (other.dir) {
         break
 }
 
+if hitpoints <= 0 {
+    // game over
+} else {
+    hitpoints--
+}
+
 instance_destroy(other)
