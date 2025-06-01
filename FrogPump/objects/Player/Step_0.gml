@@ -67,16 +67,16 @@ if monkeyGetInputStatus(Input.Primary) == MONKEY.RELEASED {
             }
             switch (shuriken.dir) {
                 case Direction.Right:
-                    audio_play_sound(drum1, 1, false, 1, 0, random_range(0.8,1.2))
+                    audio_play_sound(drum1, 1, false, 2, 0, random_range(0.8,1.2))
                     break
                 case Direction.Left:
-                     audio_play_sound(drum2, 1, false, 1, 0, random_range(0.8,1.2))
+                     audio_play_sound(drum2, 1, false, 2, 0, random_range(0.8,1.2))
                     break
                 case Direction.Up:
-                     audio_play_sound(drum3, 1, false, 1, 0, random_range(0.8,1.2))
+                     audio_play_sound(drum3, 1, false, 2, 0, random_range(0.8,1.2))
                     break
                 case Direction.Down:
-                     audio_play_sound(drum4, 1, false, 1, 0, random_range(0.8,1.2))
+                     audio_play_sound(drum4, 1, false, 2, 0, random_range(0.8,1.2))
                     break
             }
             instance_destroy(shuriken)
@@ -90,19 +90,3 @@ if sprite_index == sPlayerDown || sprite_index == sPlayerUp || sprite_index == s
 
 image_xscale = lerp(image_xscale, finalXscale, 0.1)
 image_yscale = lerp(image_yscale, 1, 0.1)
-
-// 
-
-/*
-var nearestShuriken = instance_nearest(x, y, Shuriken)
-if instance_exists(nearestShuriken) {
-    var distance = point_distance(x, y, nearestShuriken.x, nearestShuriken.y)
-    if distance <= 100 {
-        Camera.zoom = 1 + (distance / 1000)
-    } else {
-        Camera.zoom = 1
-    }
-} else {
-    Camera.zoom = 1
-}
-*/

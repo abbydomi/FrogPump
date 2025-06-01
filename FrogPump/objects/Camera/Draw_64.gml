@@ -36,7 +36,10 @@ if instance_exists(Player) {
         // leading
         draw_circle(middleW + circlePadding, middleH, circleRadius, true)
         
-        
+        // Hitpoints
+        for (var i = 0; i < hitpoints; i += 1) {
+            draw_sprite_ext(sHitpoint, 0, -32 + width - 64 * i, 32, 0.1, 0.1, 0, c_white, 1)
+        }
     }
 }
 

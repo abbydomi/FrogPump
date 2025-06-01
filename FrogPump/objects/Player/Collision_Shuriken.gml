@@ -21,9 +21,11 @@ switch (other.dir) {
 }
 
 if hitpoints <= 0 {
-    // game over
+    room_goto(Gameover)
 } else {
     hitpoints--
 }
+
+audio_play_sound(hit, 1, false, 0.5, 0, random_range(0.8, 1.2))
 
 instance_destroy(other)

@@ -1,0 +1,5 @@
+draw_self()
+draw_set_font(UngaiFont)
+draw_set_color(c_green)
+draw_text_transformed(x + 48, y - 29, "SCORE", 0.70, 0.7, 0)
+draw_text_transformed(x + 85, y, score, 1, 1, 0)
