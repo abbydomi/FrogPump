@@ -1,4 +1,5 @@
 draw_set_color(c_white)
+draw_set_font(UngaiFont)
 
 var width = display_get_gui_width()
 var height = display_get_gui_height()
@@ -43,6 +44,9 @@ with AttackTrigger {
     draw_circle(position[0], position[1], 26, !active)
 }
 
-draw_text(middleW, 16, score)
+draw_sprite_ext(sScroll, 0, 30, 75, 0.24, 0.24, 0, c_white, 1)
+draw_set_color(c_red)
+draw_text_transformed(90, 45, "Score", 0.5, 0.5, 0)
+draw_text(120, 69, score)
 
 draw_set_color(c_white)

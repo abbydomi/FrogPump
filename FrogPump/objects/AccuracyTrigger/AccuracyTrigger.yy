@@ -37,5 +37,5 @@
     "path":"sprites/sTriggerYellow/sTriggerYellow.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -38,6 +38,7 @@
   },
   "name":"FrogPump",
   "resources":[
+    {"id":{"name":"UngaiFont","path":"fonts/UngaiFont/UngaiFont.yy",},},
     {"id":{"name":"AccuracyTrigger","path":"objects/AccuracyTrigger/AccuracyTrigger.yy",},},
     {"id":{"name":"AttackTrigger","path":"objects/AttackTrigger/AttackTrigger.yy",},},
     {"id":{"name":"Blood","path":"objects/Blood/Blood.yy",},},
@@ -79,6 +80,8 @@
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},},
     {"id":{"name":"sTriggerGreen","path":"sprites/sTriggerGreen/sTriggerGreen.yy",},},
     {"id":{"name":"sTriggerYellow","path":"sprites/sTriggerYellow/sTriggerYellow.yy",},},
+    {"id":{"name":"swhite","path":"sprites/swhite/swhite.yy",},},
+    {"id":{"name":"ToriiBG","path":"sprites/ToriiBG/ToriiBG.yy",},},
     {"id":{"name":"tsTiles","path":"tilesets/tsTiles/tsTiles.yy",},},
   ],
   "resourceType":"GMProject",
